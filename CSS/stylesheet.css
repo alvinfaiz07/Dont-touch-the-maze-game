@@ -1,0 +1,62 @@
+/* CSS FILE */
+
+html,body{
+	height:100%;
+	width:100%;
+	margin: 0 auto;
+	font-family: Bauhaus 93, Bauhaus 93;
+}
+
+#container{
+	height:100%;
+	width:100%;
+}
+
+#background1{
+	height:100vh;
+	display:flex;
+	flex-direction: column;
+	background-size: cover;
+	background: linear-gradient(to right top, #00c5c5 0%, #2dff57 100%);
+	justify-content: center;
+}
+
+#header1{
+	text-align: center;
+	height:50px;
+	margin: 0 auto 0 auto;
+	text-decoration: underline;
+	padding: 10px 10px 0 10px;
+	margin: 0 500px 0 500px;
+	border: 10px solid yellow;
+}
+
+#header1:hover{
+	border-radius: 15px;
+	background-color: yellow;
+}
+
+#background2{
+	height:100vh;
+	display:flex;
+	flex-direction: column;
+	background-size: cover;
+	background-color: yellow; /* REVIEW */
+}
+
+#header2{
+	text-align: center;
+	height :50px
+	margin: 0 500px 0 500px;
+	text-decoration: underline;
+	padding: 10px 10px 10px 10px;
+}
+
+#background2 p{
+	text-align: center;
+	font-size: 50px;
+}
+
+#paragraph2{
+	margin-top: -30px;
+}
