@@ -17,7 +17,7 @@ html,body{
 	display:flex;
 	flex-direction: column;
 	background-size: cover;
-	background: linear-gradient(to right top, #00c5c5 0%, #2dff57 100%);
+	background: linear-gradient(to top, #ffffff 0%, #000000 100%);
 	justify-content: center;
 }
 
@@ -28,12 +28,7 @@ html,body{
 	text-decoration: underline;
 	padding: 10px 10px 0 10px;
 	margin: 0 500px 0 500px;
-	border: 10px solid yellow;
-}
-
-#header1:hover{
-	border-radius: 15px;
-	background-color: yellow;
+	
 }
 
 #background2{
@@ -41,7 +36,7 @@ html,body{
 	display:flex;
 	flex-direction: column;
 	background-size: cover;
-	background-color: yellow; /* REVIEW */
+	background-color: white;
 }
 
 #header2{
@@ -59,4 +54,97 @@ html,body{
 
 #paragraph2{
 	margin-top: -30px;
+}
+
+.example_e {
+        margin-top: 15%;
+        border: none;
+        background: rgba(0,0,0,0.9);
+        font-size: 50px;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 40px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+    @keyframes heartbeat {
+        from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+        }
+        10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+        }
+        17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+        }
+        33% {
+            transform: scale(0.87);
+            animation-timing-function: ease-in;
+        }
+        45% {
+            transform: scale(1);
+            animation-timing-function: ease-out;
+        }
+    }
+
+    .example_e:hover {
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: white;
+        box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.5);
+        transition: all 0.3s ease 0s;
+    }
+	
+	{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
