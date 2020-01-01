@@ -129,35 +129,35 @@ function RectCircleColliding(circle,rect){
 
 function wallsCheck(){
 	if(RectCircleColliding(ball, wallArray[0])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 	if(RectCircleColliding(ball, wallArray[1])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 	if(RectCircleColliding(ball, wallArray[2])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 	if(RectCircleColliding(ball, wallArray[3])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 	if(RectCircleColliding(ball, wallArray[4])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 	if(RectCircleColliding(ball, wallArray[5])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 	if(RectCircleColliding(ball, wallArray[6])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 	if(RectCircleColliding(ball, wallArray[7])){
-		alert("You lost. Try Again!");
+		alert("dibilangin jgn nyenggol garis!");
 		document.location.reload();
 	}
 }
@@ -224,16 +224,18 @@ document.addEventListener('keyup', (e) => {
 });
 
 start();
-var timeleft = 30;
+var timeleft =30;
 var downloadTimer = setInterval(function(){
   document.getElementById("countdown").innerHTML = timeleft + " detik lagi";
   timeleft -= 1;
   if(timeleft <= 0){
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "Jeng jeng waktu habis"
-  }
+	alert("waduh waktunya habis");
+	document.location.reload();
+	}
 }, 1000);
-setInterval(function(){ alert("JHAA Waktunya Habiss!, reload untuk main lagi"); }, 32000);
+
 
 
 
